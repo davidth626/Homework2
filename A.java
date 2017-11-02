@@ -14,7 +14,7 @@ public class A {
 		readGraph(file);
 	}
 
-	private void readGraph(File file) {
+	private void readGraph(File file) throws FileNotFoundException, IOException {
 		BufferedReader br = new BufferedReader(new FileReader(file));
 		String line;
 		while ((line = br.readLine()) != null) {
